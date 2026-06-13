@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escape the Page - Novità</title>
+  <link href="https://fonts.googleapis.com/css2?family=Belleza:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Belleza', serif;
+      background: #001704;
+      color: #e6efe6;
+      margin: 0; padding: 20px;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image:
+        url('https://cdnjs.cloudflare.com/ajax/libs/svg-patterns/1.0.0/pattern-2.svg'),
+        radial-gradient(circle at center, #1E4F2B 0%, transparent 70%);
+      background-size: 200px 200px, 100% 100%;
+      background-repeat: repeat, no-repeat;
+    }
+    .container {
+      max-width: 650px; width: 100%; margin: 0 auto;
+      padding: 40px 30px; position: relative;
+      display: flex; flex-direction: column; align-items: center;
+      background: rgba(0, 23, 4, 0.75);
+      border: 1px solid rgba(46, 125, 50, 0.3);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    .subtitle { 
+      text-align: center; 
+      color: #e6efe6; 
+      margin-bottom: 5px; 
+      text-transform: uppercase; 
+      letter-spacing: 2px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+    h1 {
+      text-align: center; 
+      color: #2E7D32; 
+      font-size: 3em;
+      margin: 5px 0 30px; 
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+    }
+    .message-text {
+      font-size: 1.25em;
+      line-height: 1.7;
+      margin-bottom: 35px;
+      color: #e6efe6;
+    }
+    .message-text p {
+      margin: 0 0 20px 0;
+    }
+    .message-text p:last-child {
+      margin-bottom: 0;
+    }
+    .email-link {
+      color: #75b87d;
+      text-decoration: none;
+      border-bottom: 1px dashed #75b87d;
+      transition: color 0.3s;
+    }
+    .email-link:hover {
+      color: #e6efe6;
+    }
+    .submit-button {
+      display: inline-block;
+      background: #e6efe6; 
+      color: #114016; 
+      border: none;
+      padding: 15px 35px; 
+      font-size: 16px; 
+      font-family: 'Belleza', serif;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 8px; 
+      box-shadow: 0 0 15px #2E7D32;
+      transition: all .3s;
+      letter-spacing: 1px;
+    }
+    .submit-button:hover { 
+      transform: translateY(-3px) scale(1.05); 
+      box-shadow: 0 0 25px #2E7D32;
+    }
+    @media(max-width:600px){
+      .container { padding: 25px 20px; }
+      h1 { font-size: 2.2em; margin-bottom: 20px; }
+      .message-text { font-size: 1.1em; }
+      .submit-button { font-size: 15px; padding: 12px 28px; }
